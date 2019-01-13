@@ -4,8 +4,6 @@ import skimage.io as io
 import numpy as np
 import os, sys
 import json
-import subprocess as sp
-
 from skimage.morphology import disk
 from skimage.morphology import dilation
 
