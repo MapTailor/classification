@@ -1,9 +1,9 @@
 import skimage.io as io
 import numpy as np
-from sklearn.feature_selection import RFE
-from sklearn.ensemble import GradientBoostingClassifier, IsolationForest
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.svm import SVC
 from sklearn.externals import joblib
-from sklearn.model_selection  import train_test_split
+from sklearn.model_selection import StratifiedShuffleSplit
 import numpy.ma as ma
 import os, shutil
 
