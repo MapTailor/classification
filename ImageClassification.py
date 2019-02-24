@@ -1,3 +1,15 @@
+# ----------------------------------------------------------------------
+# Remote Sensing Image Classification Workflow for Landsat data with soft
+# voting on a SVM and Gradient Boosting classifier. Outlier in the 
+# training data are flagged through an Isolation Forest algorithm. 
+# Feature Selection is done by a Recursive Feature Elimination method.
+# The results are classification and classification probability raster 
+# images in TIF format.
+#
+# Written by Dimo Dimov, MapTailor, 2017
+# ----------------------------------------------------------------------
+# Prerequisites: Installation of Numpy, Scipy, Scikit-Image, Scikit-Learn
+
 import skimage.io as io
 import numpy as np
 from sklearn.ensemble import GradientBoostingClassifier
